@@ -1,0 +1,117 @@
+namespace _005_IDForm
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// 필수 디자이너 변수입니다.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// 사용 중인 모든 리소스를 정리합니다.
+        /// </summary>
+        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form 디자이너에서 생성한 코드
+
+        /// <summary>
+        /// 디자이너 지원에 필요한 메서드입니다. 
+        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblId = new System.Windows.Forms.Label();
+            this.lblP = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtP = new System.Windows.Forms.TextBox();
+            this.btnL = new System.Windows.Forms.Button();
+            this.txtL = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(52, 62);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(41, 12);
+            this.lblId.TabIndex = 0;
+            this.lblId.Text = "아이디";
+            // 
+            // lblP
+            // 
+            this.lblP.AutoSize = true;
+            this.lblP.Location = new System.Drawing.Point(51, 122);
+            this.lblP.Name = "lblP";
+            this.lblP.Size = new System.Drawing.Size(53, 12);
+            this.lblP.TabIndex = 1;
+            this.lblP.Text = "패스워드";
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(139, 59);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 21);
+            this.txtId.TabIndex = 2;
+            // 
+            // txtP
+            // 
+            this.txtP.Location = new System.Drawing.Point(139, 119);
+            this.txtP.Name = "txtP";
+            this.txtP.PasswordChar = '●';
+            this.txtP.Size = new System.Drawing.Size(100, 21);
+            this.txtP.TabIndex = 3;
+            // 
+            // btnL
+            // 
+            this.btnL.Location = new System.Drawing.Point(164, 184);
+            this.btnL.Name = "btnL";
+            this.btnL.Size = new System.Drawing.Size(75, 23);
+            this.btnL.TabIndex = 4;
+            this.btnL.Text = "로그인";
+            this.btnL.UseVisualStyleBackColor = true;
+            this.btnL.Click += new System.EventHandler(this.btnL_Click);
+            // 
+            // txtL
+            // 
+            this.txtL.Location = new System.Drawing.Point(139, 233);
+            this.txtL.Name = "txtL";
+            this.txtL.ReadOnly = true;
+            this.txtL.Size = new System.Drawing.Size(100, 21);
+            this.txtL.TabIndex = 5;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(270, 299);
+            this.Controls.Add(this.txtL);
+            this.Controls.Add(this.btnL);
+            this.Controls.Add(this.txtP);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.lblP);
+            this.Controls.Add(this.lblId);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Label lblP;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtP;
+        private System.Windows.Forms.Button btnL;
+        private System.Windows.Forms.TextBox txtL;
+    }
+}
