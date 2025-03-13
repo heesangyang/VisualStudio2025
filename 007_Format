@@ -20,6 +20,13 @@ namespace _007_Format
             Console.WriteLine("v1 = " + v1 + ", v2 = " + v2);
             Console.WriteLine("v1 = {0}, v2 = {1}", v1, v2);
             Console.WriteLine($"v1 = {v1}, v2 = {v2}");
+
+            double x = 1234.5678;
+            Console.WriteLine("{0:C}", x);
+            Console.WriteLine("{0:E}", x);
+            Console.WriteLine("{0:F2}", x);
+            Console.WriteLine("{0:N2}", x); //넘버를 두자릿수까지
+            Console.WriteLine("{0:#,#.##}", x);
         }
     }
 }
