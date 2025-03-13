@@ -29,8 +29,8 @@ namespace _004_BMIF_0._2v_by양희상
 
             h /= 100;
 
-            double bmi = w / (h * h);
-            lblBMI.Text = bmi.ToString("F2");
+            double bmi = w / (h * h); 
+            //lblBMI.Text = bmi.ToString("F2");
 
             if (bmi < 20)
             {
@@ -57,6 +57,12 @@ namespace _004_BMIF_0._2v_by양희상
                 lblR.Text = "고도비만";
                 PicC.BackColor = Color.Red;
             }
+        }
+        //F7 코드보기 or 우클릭해서 코드보기
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
